@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="tvcFriend" id="KGk-i7-Jjw" customClass="tvcFriend">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZfE-oz-Uwj">
+                        <rect key="frame" x="10" y="8" width="27.5" height="27.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="ZfE-oz-Uwj" secondAttribute="height" id="2l0-bR-n2K"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oBM-F3-Fwj">
+                        <rect key="frame" x="47" y="11" width="200" height="20.5"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20.5" id="F4Q-Fg-P3t"/>
+                            <constraint firstAttribute="width" constant="200" id="oAP-xg-c5A"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iosui5" translatesAutoresizingMaskIntoConstraints="NO" id="SEX-hp-Md1">
+                        <rect key="frame" x="295" y="14.5" width="15" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="15" id="bsk-22-Gkq"/>
+                            <constraint firstAttribute="height" constant="15" id="oTf-yG-EwZ"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IhZ-pj-HhF">
+                        <rect key="frame" x="285" y="12.5" width="5" height="5"/>
+                        <color key="backgroundColor" red="0.96862745100000003" green="0.42745098040000001" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="5" id="8hE-XZ-AcO"/>
+                            <constraint firstAttribute="height" constant="5" id="vmQ-b2-dpq"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="ZfE-oz-Uwj" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="7jw-to-xal"/>
+                    <constraint firstAttribute="centerY" secondItem="ZfE-oz-Uwj" secondAttribute="centerY" id="8Rc-5f-vWf"/>
+                    <constraint firstAttribute="centerY" secondItem="SEX-hp-Md1" secondAttribute="centerY" id="Cbk-lw-G0v"/>
+                    <constraint firstItem="ZfE-oz-Uwj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="EU3-Da-RSk"/>
+                    <constraint firstAttribute="bottom" secondItem="ZfE-oz-Uwj" secondAttribute="bottom" constant="8" id="OAx-79-K5z"/>
+                    <constraint firstAttribute="trailing" secondItem="SEX-hp-Md1" secondAttribute="trailing" constant="10" id="nfM-zV-biQ"/>
+                    <constraint firstItem="oBM-F3-Fwj" firstAttribute="leading" secondItem="ZfE-oz-Uwj" secondAttribute="trailing" constant="10" id="tMR-ON-u2L"/>
+                    <constraint firstItem="SEX-hp-Md1" firstAttribute="leading" secondItem="IhZ-pj-HhF" secondAttribute="trailing" constant="5" id="y2i-9p-skT"/>
+                    <constraint firstAttribute="centerY" secondItem="oBM-F3-Fwj" secondAttribute="centerY" id="yUM-7D-e6x"/>
+                    <constraint firstItem="IhZ-pj-HhF" firstAttribute="top" secondItem="SEX-hp-Md1" secondAttribute="top" constant="-2" id="zjy-F0-mBn"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="imv" destination="ZfE-oz-Uwj" id="l5l-47-VUh"/>
+                <outlet property="imvRight" destination="SEX-hp-Md1" id="ab8-x9-Im7"/>
+                <outlet property="lbl" destination="oBM-F3-Fwj" id="cGK-Kd-y2r"/>
+                <outlet property="viewHot" destination="IhZ-pj-HhF" id="xX0-f2-D1X"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="iosui5" width="15" height="15"/>
+    </resources>
+</document>

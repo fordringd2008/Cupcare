@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>100</key>
+	<string>没有权限</string>
+	<key>101</key>
+	<string>服务器异常</string>
+	<key>102</key>
+	<string>邮件发送失败</string>
+	<key>103</key>
+	<string>推送异常</string>
+	<key>200</key>
+	<string>参数不能为空</string>
+</dict>
+</plist>

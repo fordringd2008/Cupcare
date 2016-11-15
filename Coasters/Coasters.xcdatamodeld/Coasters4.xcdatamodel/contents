@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10171" systemVersion="15A284" minimumToolsVersion="Xcode 4.3">
+    <entity name="City" representedClassName="City" syncable="YES">
+        <attribute name="cityID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cityName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="language" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <relationship name="state" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="State" inverseName="cities" inverseEntity="State" syncable="YES"/>
+    </entity>
+    <entity name="Clock" representedClassName="Clock" syncable="YES">
+        <attribute name="hour" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="iD" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="isOn" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="minute" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="repeat" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="strRepeat" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="strTime" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="strType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="Country" representedClassName="Country" syncable="YES">
+        <attribute name="countryID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="countryName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="language" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <relationship name="states" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="State" inverseName="country" inverseEntity="State" syncable="YES"/>
+    </entity>
+    <entity name="DataRecord" representedClassName="DataRecord" syncable="YES">
+        <attribute name="access" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cout" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="dateValue" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="day" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="isUpload" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="month" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="percent" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="pUUIDString" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="target" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="time_array" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="water_array" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="water_array_Hours" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="waterCount" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="year" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="Friend" representedClassName="Friend" syncable="YES">
+        <attribute name="access" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dateTime" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="isRequest" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="k_date" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="last_like_kDate" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="lastRemindDatetime" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="lastRemindTime" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="like_num" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="tag" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="time_array" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="user_drink_target" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="user_gender" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="user_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="user_nick_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="user_pic_url" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="water_array" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="waterCount" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="FriendInGlobal" representedClassName="FriendInGlobal" syncable="YES">
+        <attribute name="access" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nick_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rank" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="url" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="user_gender" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="user_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="waterCount" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="FriendRequest" representedClassName="FriendRequest" syncable="YES">
+        <attribute name="access" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dateTime" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="day" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="friend_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="friend_msg" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="friend_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="group_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="group_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isOver" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="month" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="user_gender" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="user_pic_url" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="year" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="Group" representedClassName="Group" syncable="YES">
+        <attribute name="access" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="admin_user_gender" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="admin_user_nick_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="admin_user_pic_url" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="admin_userid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="group_city_code" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="group_country_code" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="group_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="group_member_num" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="group_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="group_notice" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="group_notice_time" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="group_pic_url" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="group_state_code" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="is_admin" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="is_around" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="update_time" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="State" representedClassName="State" syncable="YES">
+        <attribute name="language" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="stateID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="stateName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="cities" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="City" inverseName="state" inverseEntity="City" syncable="YES"/>
+        <relationship name="country" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Country" inverseName="states" inverseEntity="Country" syncable="YES"/>
+    </entity>
+    <entity name="SynData" representedClassName="SynData" syncable="YES">
+        <attribute name="access" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="dateValue" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="day" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="hour" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="minute" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="month" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="pName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pUUIDString" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="score" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="second" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="sub" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="timeValue" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="water" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="waterCount" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="year" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="Tips" representedClassName="Tips" syncable="YES">
+        <attribute name="datetime" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="datetimeValue" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="pic_url" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tip_content" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tip_id" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="tip_languageCode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tip_title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tip_url" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="UserInfo" representedClassName="UserInfo" syncable="YES">
+        <attribute name="access" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="account" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="area_code" optional="YES" attributeType="String" defaultValueString="11" syncable="YES"/>
+        <attribute name="cityID" optional="YES" attributeType="String" defaultValueString="0" syncable="YES"/>
+        <attribute name="countryID" optional="YES" attributeType="String" defaultValueString="1" syncable="YES"/>
+        <attribute name="isNeedUpdate" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="like_number" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="loginType" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="logo" optional="YES" attributeType="String" defaultValueString=" " syncable="YES"/>
+        <attribute name="noDisturbEnd" optional="YES" attributeType="Integer 64" defaultValueString="8" syncable="YES"/>
+        <attribute name="noDisturbStart" optional="YES" attributeType="Integer 64" defaultValueString="20" syncable="YES"/>
+        <attribute name="orData" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="password" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="phoneNumber" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pUUIDString" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rank" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="stateID" optional="YES" attributeType="String" defaultValueString="11" syncable="YES"/>
+        <attribute name="swithAcceptPush" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="swithLight" optional="YES" attributeType="Boolean" defaultValueString="YES" syncable="YES"/>
+        <attribute name="swithNoDisturb" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="swithSound" optional="YES" attributeType="Boolean" defaultValueString="YES" syncable="YES"/>
+        <attribute name="token" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="unit" optional="YES" attributeType="Boolean" defaultValueString="YES" syncable="YES"/>
+        <attribute name="update_time" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="user_birthday" optional="YES" attributeType="Date" defaultDateTimeInterval="-347155200" syncable="YES"/>
+        <attribute name="user_drink_target" optional="YES" attributeType="Integer 64" defaultValueString="2000" syncable="YES"/>
+        <attribute name="user_gender" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="user_height" optional="YES" attributeType="Double" defaultValueString="170" syncable="YES"/>
+        <attribute name="user_id" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="user_language_code" optional="YES" attributeType="String" defaultValueString="01" syncable="YES"/>
+        <attribute name="user_nick_name" optional="YES" attributeType="String" defaultValueString="CupcareUser" syncable="YES"/>
+        <attribute name="user_weight" optional="YES" attributeType="Double" defaultValueString="70" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="City" positionX="-36" positionY="153" width="128" height="105"/>
+        <element name="Clock" positionX="-63" positionY="-18" width="128" height="195"/>
+        <element name="Country" positionX="-54" positionY="135" width="128" height="105"/>
+        <element name="DataRecord" positionX="-54" positionY="135" width="128" height="270"/>
+        <element name="Friend" positionX="-45" positionY="144" width="128" height="300"/>
+        <element name="FriendInGlobal" positionX="-54" positionY="135" width="128" height="150"/>
+        <element name="FriendRequest" positionX="-54" positionY="135" width="128" height="255"/>
+        <element name="Group" positionX="-54" positionY="135" width="128" height="300"/>
+        <element name="State" positionX="-45" positionY="144" width="128" height="120"/>
+        <element name="SynData" positionX="-54" positionY="36" width="128" height="285"/>
+        <element name="Tips" positionX="-54" positionY="135" width="128" height="165"/>
+        <element name="UserInfo" positionX="-54" positionY="126" width="128" height="540"/>
+    </elements>
+</model>

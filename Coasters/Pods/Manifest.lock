@@ -1,0 +1,92 @@
+PODS:
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
+  - AliyunOSSiOS (2.5.0)
+  - Bugtags (1.2.6)
+  - CocoaLumberjack (2.2.0):
+    - CocoaLumberjack/Default (= 2.2.0)
+    - CocoaLumberjack/Extensions (= 2.2.0)
+  - CocoaLumberjack/Core (2.2.0)
+  - CocoaLumberjack/Default (2.2.0):
+    - CocoaLumberjack/Core
+  - CocoaLumberjack/Extensions (2.2.0):
+    - CocoaLumberjack/Default
+  - JPush (2.2.0)
+  - KissXML (5.0.3):
+    - KissXML/Standard (= 5.0.3)
+  - KissXML/Core (5.0.3)
+  - KissXML/Standard (5.0.3):
+    - KissXML/Core
+  - libPhoneNumber-iOS (0.8.10)
+  - MagicalRecord (2.3.0)
+  - Masonry (0.6.4)
+  - MGSwipeTableCell (1.5.5)
+  - MJExtension (3.0.10)
+  - MJRefresh (3.0.7)
+  - pop (1.0.9)
+  - SDWebImage (3.7.6):
+    - SDWebImage/Core (= 3.7.6)
+  - SDWebImage/Core (3.7.6)
+  - SRMonthPicker (0.2.10)
+  - TPKeyboardAvoiding (1.3)
+  - UMengAnalytics (3.6.6)
+  - ZXingObjC (3.1.0):
+    - ZXingObjC/All (= 3.1.0)
+  - ZXingObjC/All (3.1.0)
+
+DEPENDENCIES:
+  - AFNetworking (~> 3.1.0)
+  - AliyunOSSiOS (~> 2.5.0)
+  - Bugtags (~> 1.2.6)
+  - CocoaLumberjack (~> 2.2.0)
+  - JPush (~> 2.2.0)
+  - KissXML (~> 5.0.3)
+  - libPhoneNumber-iOS (~> 0.8.8)
+  - MagicalRecord (= 2.3.0)
+  - Masonry (~> 0.6.3)
+  - MGSwipeTableCell (~> 1.5.5)
+  - MJExtension (~> 3.0.10)
+  - MJRefresh (~> 3.0.1)
+  - pop (~> 1.0.9)
+  - SDWebImage (~> 3.7.6)
+  - SRMonthPicker (~> 0.2.10)
+  - TPKeyboardAvoiding (~> 1.3)
+  - UMengAnalytics (~> 3.6.6)
+  - ZXingObjC (~> 3.0)
+
+SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  AliyunOSSiOS: 0c275ccd87b0b1fb82f3f8abe1aa1568a17b19d7
+  Bugtags: 10d4b0c089b34f6e28877e5830218627ebd14dbb
+  CocoaLumberjack: 17fe8581f84914d5d7e6360f7c70022b173c3ae0
+  JPush: 14bd5ff248fbef9c2179c82a9d1120e573b1c66a
+  KissXML: d19dd6dc65e0dc721ba92b3077b8ebdd240f1c1e
+  libPhoneNumber-iOS: 7bfd00f843fdcd82b5182b463e8eb3b27579f41d
+  MagicalRecord: 89eb7d7ead39fb37f01c3d010665ee94d17f8dba
+  Masonry: 281802d04d787ea2973179ee8bcb50500579ede2
+  MGSwipeTableCell: bafeb5f351124544c9364ecbdf24c7b06a37d340
+  MJExtension: d86aacb740c87519d20e3cca55b6fa4be6cc7548
+  MJRefresh: f3e1228ec3d38c7ba5208d58032631a52f39f495
+  pop: f667631a5108a2e60d9e8797c9b32ddaf2080bce
+  SDWebImage: c325cf02c30337336b95beff20a13df489ec0ec9
+  SRMonthPicker: d3c639e82f525f1c10d1ad7f4bbdf180d404942b
+  TPKeyboardAvoiding: a5138f318c06fb3e151f886e18ce4a72695d9cbe
+  UMengAnalytics: 4bf831415146b9c57cb10be65fbd43462ef8cf65
+  ZXingObjC: bf15b3814f7a105b6d99f47da2333c93a063650a
+
+PODFILE CHECKSUM: 6244f124ffdee5aa0be1e4436ad85fe07ab81249
+
+COCOAPODS: 1.1.0.rc.2

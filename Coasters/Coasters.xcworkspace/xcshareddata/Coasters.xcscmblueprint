@@ -1,0 +1,32 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "E7965BF28A2F0E4E02C71C2D992BACAF7E2CCD92",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "707fbbf2-c5d4-af49-a7c7-aa6e372eaf34++505" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "E7965BF28A2F0E4E02C71C2D992BACAF7E2CCD92" : 9223372036854775807,
+    "707fbbf2-c5d4-af49-a7c7-aa6e372eaf34++505" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "571913E2-DCDE-45A7-8820-6B8AE7B20AFF",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "E7965BF28A2F0E4E02C71C2D992BACAF7E2CCD92" : "Cupcare\/",
+    "707fbbf2-c5d4-af49-a7c7-aa6e372eaf34++505" : "%E6%96%B0%E5%B7%A5%E7%A8%8B\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Coasters",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Coasters\/Coasters.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/192.168.1.117\/svn\/C1_ios",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "707fbbf2-c5d4-af49-a7c7-aa6e372eaf34++505"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/dingfude2008\/Cupcare.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "E7965BF28A2F0E4E02C71C2D992BACAF7E2CCD92"
+    }
+  ]
+}

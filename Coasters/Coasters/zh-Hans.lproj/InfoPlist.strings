@@ -1,0 +1,10 @@
+/* 
+  InfoPlist.strings
+  Coasters
+
+  Created by 丁付德 on 15/8/12.
+  Copyright (c) 2015年 dfd. All rights reserved.
+*/
+
+"CFBundleDisplayName" = "Cupcare";                      // APP 名称
+//"CFBundleDisplayName" = "麦可杯垫";                      // APP 名称
